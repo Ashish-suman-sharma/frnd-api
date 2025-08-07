@@ -1,5 +1,4 @@
 const express = require("express");
-const path = require("path");
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -7,58 +6,62 @@ const PORT = process.env.PORT || 3000;
 // Middleware to parse JSON
 app.use(express.json());
 
-// Serve static files from images directory
-app.use("/images", express.static(path.join(__dirname, "images")));
-
 // Sample user data
 const userData = [
   {
     id: 1,
     name: "suman shekhar",
     about: "Software Developer with 5 years of experience",
-    image: "/images/BeautyPlus_20230422145754740_save.jpg",
+    image:
+      "https://raw.githubusercontent.com/Ashish-suman-sharma/frnd-api/main/images/BeautyPlus_20230422145754740_save.jpg",
     registrationNumber: "3502210082",
   },
   {
     id: 2,
     name: "abhishek dhnadhli",
     about: "UI/UX Designer passionate about creating beautiful interfaces",
-    image: "/images/BeautyPlus_20230426145857290_save.png",
+    image:
+      "https://raw.githubusercontent.com/Ashish-suman-sharma/frnd-api/main/images/BeautyPlus_20230426145857290_save.png",
     registrationNumber: "350221002",
   },
   {
     id: 3,
     name: "Abhishek bablu",
     about: "Full Stack Developer specializing in MERN stack",
-    image: "/images/BeautyPlus_20230507221313777_save.jpg",
+    image:
+      "https://raw.githubusercontent.com/Ashish-suman-sharma/frnd-api/main/images/BeautyPlus_20230507221313777_save.jpg",
     registrationNumber: "3502210003",
   },
   {
     id: 4,
     name: "Govinda kumar",
     about: "Data Scientist with expertise in machine learning",
-    image: "/images/BeautyPlus_20230522203038173_save.jpg",
+    image:
+      "https://raw.githubusercontent.com/Ashish-suman-sharma/frnd-api/main/images/BeautyPlus_20230522203038173_save.jpg",
     registrationNumber: "3502210024",
   },
   {
     id: 5,
     name: "Ashish suman",
     about: "DevOps Engineer with cloud computing experience",
-    image: "/images/BeautyPlus_20230523182236748_save.jpg",
+    image:
+      "https://raw.githubusercontent.com/Ashish-suman-sharma/frnd-api/main/images/BeautyPlus_20230523182236748_save.jpg",
     registrationNumber: "3502210008",
   },
   {
     id: 6,
     name: "avinash kumar",
     about: "Software Engineer with backend development skills",
-    image: "/images/BeautyPlus_20230524202626810_save.jpg",
+    image:
+      "https://raw.githubusercontent.com/Ashish-suman-sharma/frnd-api/main/images/BeautyPlus_20230524202626810_save.jpg",
     registrationNumber: "3502210011",
   },
   {
     id: 7,
     name: "gupta betichod",
     about: "Frontend Developer specializing in React",
-    image: "/images/BeautyPlus_20230901100616372_save.jpg",
+    image:
+      "https://raw.githubusercontent.com/Ashish-suman-sharma/frnd-api/main/images/BeautyPlus_20230901100616372_save.jpg",
     registrationNumber: "3502210051",
   },
 ];
