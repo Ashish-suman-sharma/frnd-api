@@ -14,38 +14,52 @@ app.use("/images", express.static(path.join(__dirname, "images")));
 const userData = [
   {
     id: 1,
-    name: "John Doe",
+    name: "suman shekhar",
     about: "Software Developer with 5 years of experience",
     image: "/images/BeautyPlus_20230422145754740_save.jpg",
-    registrationNumber: "REG001",
+    registrationNumber: "3502210082",
   },
   {
     id: 2,
-    name: "Jane Smith",
+    name: "abhishek dhnadhli",
     about: "UI/UX Designer passionate about creating beautiful interfaces",
     image: "/images/BeautyPlus_20230426145857290_save.png",
-    registrationNumber: "REG002",
+    registrationNumber: "350221002",
   },
   {
     id: 3,
-    name: "Mike Johnson",
+    name: "Abhishek bablu",
     about: "Full Stack Developer specializing in MERN stack",
     image: "/images/BeautyPlus_20230507221313777_save.jpg",
-    registrationNumber: "REG003",
+    registrationNumber: "3502210003",
   },
   {
     id: 4,
-    name: "Sarah Wilson",
+    name: "Govinda kumar",
     about: "Data Scientist with expertise in machine learning",
     image: "/images/BeautyPlus_20230522203038173_save.jpg",
-    registrationNumber: "REG004",
+    registrationNumber: "3502210024",
   },
   {
     id: 5,
-    name: "David Brown",
+    name: "Ashish suman",
     about: "DevOps Engineer with cloud computing experience",
     image: "/images/BeautyPlus_20230523182236748_save.jpg",
-    registrationNumber: "REG005",
+    registrationNumber: "3502210008",
+  },
+  {
+    id: 6,
+    name: "avinash kumar",
+    about: "Software Engineer with backend development skills",
+    image: "/images/BeautyPlus_20230524202626810_save.jpg",
+    registrationNumber: "3502210011",
+  },
+  {
+    id: 7,
+    name: "gupta betichod",
+    about: "Frontend Developer specializing in React",
+    image: "/images/BeautyPlus_20230901100616372_save.jpg",
+    registrationNumber: "3502210051",
   },
 ];
 
@@ -131,10 +145,4 @@ app.use((error, req, res, next) => {
 // Start server
 app.listen(PORT, () => {
   console.log(`🚀 Server is running on http://localhost:${PORT}`);
-  console.log(`📚 API Documentation:`);
-  console.log(`   - GET /api/users - Get all users`);
-  console.log(`   - GET /api/users/:id - Get user by ID`);
-  console.log(
-    `   - GET /api/users/registration/:regNumber - Get user by registration number`
-  );
 });
